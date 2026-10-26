@@ -1,0 +1,113 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: white;
+    background-image: url(../images/3rd\ page\ background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    background-color: white;
+    height: 80px;
+}
+
+.header ul {
+    float: right;
+    margin-top: 25px;
+}
+
+.header ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.header ul li :hover {
+    color: greenyellow;
+}
+
+.ang {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    /* width: 670px; */
+    background-color: white;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+
+}
+.form1{
+    text-align: center;
+}
+.form1 h3{
+    padding-top: 20px;
+    font-style: italic;
+}
+.center-card {
+    display: flex;
+    justify-content: center;
+
+}
+.button
+{
+    width:665px;
+    padding: 10px;
+    background-color: #aab39d;
+    font-size: 17px;
+    
+}
+.button:hover
+{
+    background-color:gold;
+}
+#gname
+{
+    padding: 10px;
+    padding-right: 500px;
+}
+#bname
+{
+    padding: 10px;
+    padding-right: 500px;
+}
+#wdate
+{
+    padding: 10px;
+    padding-right: 220px;
+}
+#wtime
+{
+    padding: 10px;
+    padding-right: 220px;
+}
+#wplace
+{
+    padding: 10px;
+    padding-right: 493px;
+}
+input,.button
+{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.last{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:90px;
+    /* font-size: 17px; */
+}
+a{
+    text-decoration: none;
+}

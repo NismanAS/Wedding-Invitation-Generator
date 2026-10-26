@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Knot</title>
+    <link rel="stylesheet" type="text/css" href="css/wed_details_1.css">
+    <link rel="icon" href="images/Logo url.png">
+    <style>
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/logo.png" width="220px">
+        <ul>
+            <li><a class="ang" href="home.html">Home</a></li>
+            <li><a class="ang" href="designs.html">Designs</a></li>
+            <li><a class="ang" href="about.html">About Us</a></li>
+            <!-- <li><a class="ang" href="#">Contact Us</a></li> -->
+        </ul>
+    </div>
+
+    <div class="center-card">
+        <div class="center">
+            <div class="form1">
+                <h1>Wedding Details</h1>
+                <h3>Tell us few details to create your special invitation</h3><br>
+            </div>
+            <div class="form">
+                <form>
+                    <label>Groom's Name</label><br>
+                    <input type="text" name="" id="gname" placeholder="Enter groom's name"><br>
+                    <br>
+                    <label>Bride's Name</label><br>
+                    <input type="text" name="" id="bname" placeholder="Enter Bride's name"><br>
+                    <br>
+                    <label>Wedding Date</label>
+                    <label style="margin-left: 250px">Wedding Time</label><br>
+                    <input type="date" name="" id="wdate" required>
+                    
+                    
+                    <input type="time" name="" id="wtime"><br>
+                    <br>
+                    <label>Wedding Place</label><br>
+                    <input type="text" name="" id="wplace" placeholder="Enter place Address"><br><br>
+                </form>
+            </div>
+            <div class="container">
+                <button class="button" onclick="next()">Generate Invitation</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+<a href="designs.html"><h4 class="last" >← back to the templates</h4></a>
+</body>
+<script>
+     // Prevent selecting a wedding date before today.
+    const weddingDateInput = document.getElementById('wdate');
+
+    function setMinimumWeddingDate() {
+        const today = new Date();
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0');
+        const day = String(today.getDate()).padStart(2, '0');
+        weddingDateInput.min = `${year}-${month}-${day}`;
+    }
+
+    setMinimumWeddingDate();
+
+    function next(){
+    const selectedDate = weddingDateInput.value;
+
+    if (!selectedDate) {
+        alert('Please select your wedding date!');
+        return;
+    }
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const chosenDate = new Date(selectedDate + 'T00:00:00');
+
+    if (chosenDate < today) {
+        alert('Past dates are not allowed. Please select today or a future date.');
+        setMinimumWeddingDate();
+        return;
+    } 
+
+    var groom = document.getElementById('gname').value;
+    var bride = document.getElementById('bname').value;
+    var date = document.getElementById('wdate').value;
+    var time = document.getElementById('wtime').value;
+    var place = document.getElementById('wplace').value;
+
+    localStorage.setItem('gname',groom);
+    localStorage.setItem('bname',bride);
+    localStorage.setItem('wdate',date);
+    localStorage.setItem('wtime',time);
+    localStorage.setItem('wplace',place);
+    
+    window.location.href = "temp_1.html"
+    }
+</script>
+</html>

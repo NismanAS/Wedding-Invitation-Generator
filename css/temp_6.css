@@ -1,0 +1,259 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    /* background-color: white; */
+    background-color: #ebedee;
+    /* background-image: url(../images/3rd\ page\ background.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: white;
+    height: 80px;
+}
+
+.header ul {
+    float: right;
+    margin-top: 25px;
+}
+
+.header ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.header ul li :hover {
+    color: greenyellow;
+}
+
+.ang {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .main{
+    background-color: #f0dfc3;
+} */
+/* .main{
+    background-image: url(../images/imgbac.png);
+    background-size: 100%;
+    height: 210mm;
+    width: 148mm;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    
+} */
+ .main {
+    background-image: url("../images/imgbac 6.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 148mm;
+    height: 210mm;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+.head{
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.15em;
+     color: #cdd4b0;
+    padding-top: 130px;
+    font-size: 16px;
+}
+.name{
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: 'great Vibes',cursive;
+    color:#cdd4b0;
+    font-weight: 300;
+
+
+    /* font-family: 'Great Vibes', cursive;
+    font-size: 85px;
+    font-weight: normal;
+    color: #cdd4b0;
+    margin: 0; */
+}
+.message {
+    margin-top: 20px;
+    /* font-size: 30px; */
+    line-height: 1.6;
+    letter-spacing: 3px;
+    color: #cdd4b0;
+}
+.date1{
+    font-size: 16px;
+    color: #cdd4b0;
+    padding-bottom: 10px;
+}
+.time1{
+    padding-top: 10px;
+    font-size: 16px;
+    color: #cdd4b0;
+    padding-bottom: 10px;
+}
+.daytime
+{
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 70px; */
+    margin-top: 35px;
+    color: #cdd4b0;
+    letter-spacing: 3px;
+    font-size: 10px ;
+}
+.time{
+    /* padding: 30px; */
+}
+.reception {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: #cdd4b0;
+    padding-bottom: 130px;
+}
+.address
+{
+    margin: 30px;
+    color: #cdd4b0;
+}
+.sidediv
+{
+    margin-left: 70px;
+    background-color:whitesmoke;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.join{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px;
+    
+}
+.fa-circle-check {
+    color: gray;
+    
+}
+.icon
+{
+    padding-top: 40px;
+    text-align: center;
+    margin: 50px;
+    border: solid 1px lightgray;
+    background-color: #ebedee;
+    border-radius: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+.icon h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 30px;
+}
+.icon button{
+    margin-top: 40px;
+    margin-bottom: 35px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width:300px;
+    padding: 15px;
+    background-color: grey;
+    font-size: 17px;
+    color: white;
+}
+.icon button:hover
+{
+    background-color:#cdd4b0;
+    color:black;
+}
+.icon p
+{
+    padding-top: 30px;
+    color: grey;
+}
+.create
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width:260px;
+    padding: 15px;
+    /* background-color:  */
+    font-size: 17px;
+    margin: 20px;
+    
+    
+}
+.create:hover
+{
+    color: white;
+    background-color: grey;
+}
+.icon a{
+     text-decoration: none;
+     color: lightslategray;
+}
+.thank
+{
+    padding-top: 70px;
+    text-align: center;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-size: 21px ;
+}
+
+
+.footer {
+    background-color: black;
+}
+.footer img{
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.footer5 {
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+    padding: 20px;
+
+}
+.footer2 h2 
+{
+    font-family: Arial, Helvetica;
+}
+.footer2 h3
+{
+    margin-top:10px ;
+    font-family: Arial, Helvetica;
+}
+.footer2 p{
+    margin-top:10px ;
+}
+.footer4 h3
+{
+    font-family:Arial, Helvetica ;
+}
+.footer4 p
+{
+    padding-top: 10px;
+}
+.footer 
+
+li {
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}

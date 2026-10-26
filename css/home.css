@@ -1,0 +1,126 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+body
+{
+    background-color: white;
+}
+.header
+{
+    background-color: white;
+    height: 80px;
+}
+.header ul
+{
+    float: right;
+    margin-top: 25px;
+}
+.header ul li
+{
+    display: inline;
+    margin-right: 50px;
+}
+.header ul li :hover
+{
+    color: greenyellow ;
+}
+.ang
+{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#banner
+{
+    background-image: url(../images/1ST\ page\ imgbacground.jpg);
+    background-size: cover;
+    height: 647px;
+    text-align: center;
+}
+.create
+{
+    display:flex;
+    justify-content: center;
+    color:#80954b ;
+    padding-top: 240px;
+    
+}
+#banner h3{
+    border: 2px solid goldenrod;
+    width: 160px;
+}
+.design
+{
+  margin-right: 50px;
+  margin-top: 20px;
+  border-radius: 20px;
+  
+}
+.design:hover
+{
+    background-color: #80954b;
+    color: aliceblue;
+}
+.words
+{
+    margin: 14px;
+    color: #80954b;
+    font-size: 20px;
+}
+.header ul li button
+{
+    background-color: #80954b;
+    border-radius: 10px;
+    padding: 5px;
+}
+.pad
+{
+    text-decoration: none;
+    color: black;
+}
+.footer {
+    background-color: black;
+}
+.footer img{
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.footer5 {
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+    padding: 20px;
+
+}
+.footer2 h2 
+{
+    font-family: Arial, Helvetica;
+}
+.footer2 h3
+{
+    margin-top:10px ;
+    font-family: Arial, Helvetica;
+}
+.footer2 p{
+    margin-top:10px ;
+}
+.footer4 h3
+{
+    font-family:Arial, Helvetica ;
+}
+.footer4 p
+{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.footer 
+
+li {
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
