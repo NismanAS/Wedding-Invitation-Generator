@@ -58,38 +58,8 @@
     <br>
 <a href="designs.html"><h4 class="last" >← back to the templates</h4></a>
 </body>
-<script>
-     // Prevent selecting a wedding date before today.
-    const weddingDateInput = document.getElementById('wdate');
-
-    function setMinimumWeddingDate() {
-        const today = new Date();
-        const year = today.getFullYear();
-        const month = String(today.getMonth() + 1).padStart(2, '0');
-        const day = String(today.getDate()).padStart(2, '0');
-        weddingDateInput.min = `${year}-${month}-${day}`;
-    }
-
-    setMinimumWeddingDate();
-
+<script> 
     function next(){
-    const selectedDate = weddingDateInput.value;
-
-    if (!selectedDate) {
-        alert('Please select your wedding date!');
-        return;
-    }
-
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const chosenDate = new Date(selectedDate + 'T00:00:00');
-
-    if (chosenDate < today) {
-        alert('Past dates are not allowed. Please select today or a future date.');
-        setMinimumWeddingDate();
-        return;
-    } 
-
     var groom = document.getElementById('gname').value;
     var bride = document.getElementById('bname').value;
     var date = document.getElementById('wdate').value;
