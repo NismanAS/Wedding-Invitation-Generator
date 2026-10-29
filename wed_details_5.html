@@ -27,27 +27,28 @@
                 <h3>Tell us few details to create your special invitation</h3><br>
             </div>
             <div class="form">
-                <form>
+                 <form onsubmit="return next(event)">
                     <label>Groom's Name</label><br>
-                    <input type="text" name="" id="gname" placeholder="Enter groom's name"><br>
+                    <input type="text" name="" id="gname" placeholder="Enter groom's name" required><br>
                     <br>
                     <label>Bride's Name</label><br>
-                    <input type="text" name="" id="bname" placeholder="Enter Bride's name"><br>
+                    <input type="text" name="" id="bname" placeholder="Enter Bride's name" required><br>
                     <br>
                     <label>Wedding Date</label>
                     <label style="margin-left: 250px">Wedding Time</label><br>
                     <input type="date" name="" id="wdate" required>
                     
                     
-                    <input type="time" name="" id="wtime"><br>
+                    <input type="time" name="" id="wtime" required><br>
                     <br>
                     <label>Wedding Place</label><br>
-                    <input type="text" name="" id="wplace" placeholder="Enter place Address"><br><br>
-                </form>
+                    <input type="text" name="" id="wplace" placeholder="Enter place Address" required><br><br>
+               
             </div>
             <div class="container">
-                <button class="button" onclick="next()">Generate Invitation</button>
+                <button class="button" type="submit">Generate Invitation</button>
             </div>
+             </form>
         </div>
     </div>
     <br>
@@ -55,14 +56,26 @@
     <br>
 <a href="designs.html"><h4 class="last" >← back to the templates</h4></a>
 </body>
-<script>
-    
-    function next(){
+<script> 
+     // Prevent selecting a wedding date in the past (uses the user's local date).
+    const weddingDateInput = document.getElementById('wdate');
+    const nowForDate = new Date();
+    const localToday = new Date(nowForDate.getTime() - nowForDate.getTimezoneOffset() * 60000).toISOString().split('T')[0];
+    weddingDateInput.min = localToday;
+
+    function next(event){
+    event.preventDefault();
     var groom = document.getElementById('gname').value;
     var bride = document.getElementById('bname').value;
     var date = document.getElementById('wdate').value;
     var time = document.getElementById('wtime').value;
     var place = document.getElementById('wplace').value;
+
+    if (date < localToday) {
+        alert('Please select today or a future date for the wedding.');
+        weddingDateInput.focus();
+        return false;
+    }
 
     localStorage.setItem('gname',groom);
     localStorage.setItem('bname',bride);
@@ -70,7 +83,8 @@
     localStorage.setItem('wtime',time);
     localStorage.setItem('wplace',place);
     
-    window.location.href = "temp_5.html"
+    window.location.href = "temp_1.html"
+    return false;
     }
 </script>
 </html>
