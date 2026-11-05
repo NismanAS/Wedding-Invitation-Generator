@@ -59,6 +59,7 @@
 <script> 
  // Prevent selecting a wedding date in the past (uses the user's local date).
     const weddingDateInput = document.getElementById('wdate');
+    console.log(weddingDateInput)
     const nowForDate = new Date();
     const localToday = new Date(nowForDate.getTime() - nowForDate.getTimezoneOffset() * 60000).toISOString().split('T')[0];
     weddingDateInput.min = localToday;
@@ -83,7 +84,7 @@
     localStorage.setItem('wtime',time);
     localStorage.setItem('wplace',place);
     
-    window.location.href = "temp_1.html"
+    window.location.href = "temp_6.html"
     return false;
     }
 </script>
